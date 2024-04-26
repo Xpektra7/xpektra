@@ -1,0 +1,275 @@
+@font-face{
+    font-family:"Montserrat";
+    src:url("assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family:"Poppins";
+    src:url("assets/fonts/Poppins-Regular.ttf");
+}
+:root{
+ --pink:#DB0340;
+ --dark-blue:#011222
+}
+*{
+    margin : 0;
+    padding : 0;
+    color:white;
+    box-sizing:border-box;
+    transition:.3s;
+    font-size:12px;
+    font-family:"Poppins";
+    
+}
+body{
+    background-color:#0C0C0C;
+    max-width:1600px;
+    overflow-x: hidden ;
+    
+}
+
+header{
+    display : flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 10% 0 10%;
+}
+
+.navlink{
+    display : inline-block;
+    margin-right:10px;
+    
+}
+.navlink a{
+    font-size:16px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    padding: 0 3px;
+    font-family:"Poppins";
+    
+    
+}
+#active{
+    color:var(--pink);
+}
+#logo img{
+    width: 130px;
+    height:auto;
+    display:inline-block;
+    margin-right:48px;
+    
+}
+.socials{
+    display:flex;
+    align-items : center;
+}
+.fa-facebook, .fa-envelope, .fa-x-twitter{
+    font-size:32px;
+    display:inline;
+    transition:.3s;
+    padding:0 8px;
+}
+.fa-facebook:hover, .fa-envelope:hover, .fa-x-twitter:hover{
+ color:var(--pink);
+}
+/* Hero Section */
+#cta{
+    margin-right:10%;
+    margin-left:10%;
+    margin-top:20px;
+}
+#cta-image{
+    width:45%;
+    aspect-ratio:1;
+    float:right;
+    border-radius:8px;
+}
+#cta-category{
+    font-size:40px;
+    font-family:"Poppins";
+    text-decoration:underline 12px var(--pink);
+    
+}
+#cta-author{
+    font-size: 16px;
+    font-family:"Montserrat";
+    color: grey;
+    margin-top:43px;
+    font-style:italic;
+}
+#cta-topic{
+    font-size:56px;
+    font-family:"Montserrat";
+    color:var(--pink);
+    font-weight:bold;
+    margin-top:16px;
+    
+}
+#cta-note{
+    font-size:13px;
+    font-family:"Poppins";
+    width:45%;
+    margin-top:8px;
+    display:inline-block;
+    opacity:95%;
+    letter-spacing:1px;
+}
+#cta-btn{
+    display:inline;
+    width:5%;
+    aspect-ratio:1;
+    background-color:var(--pink);
+    outline:none;
+    border:none;
+    border-radius:2px;
+    position:relative;
+    top:-16px;
+}
+.fa-arrow-right{
+ font-size:24px;
+ transform:rotate(45deg);
+}
+#slide-rule{
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:max-content;
+    justify-content:space-between;
+    margin-top:20px;
+}
+hr{
+    
+    display:inline-block ;
+    ;
+}
+#slide-no{
+    display: inline;
+    font-size:32px;
+    font-family:"Montserrat";
+    font-weight: bold ;
+    color: grey ;
+    letter-spacing:5px;
+}
+#slide-count{
+    font-size:48px;
+    color:white;
+    opacity:85%;
+    
+}
+
+/* Latest Article */
+#la {
+ margin-top:1vh;
+}
+#la-head{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+}
+#la-head h3{
+ font-family:"Montserrat";
+ color:var(--pink);
+ font-size:32px;
+ }
+.lalink{
+    font-size:16px;
+    text-decoration:none;
+    font-weight:bold;
+    padding: 6px 12px;
+    font-family:"Poppins";
+    border: solid 1px var(--pink);
+    border-radius:4px;
+    color:grey;
+    margin-left:4px;
+    margin-right:4px;
+    
+}
+#active-lalink{
+ color:white;
+ background-color:var(--pink);
+}
+
+#search-btn{
+ width:160px;
+ height:24px;
+ border-bottom:2px solid var(--pink);
+ background:none;
+ border-right:none;
+ border-left:none;
+ border-top:none;
+ outline:none;
+ color:grey;
+ font-size:16px;
+ font-family:"Poppins";
+}
+#la-body{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ flex-wrap:wrap;
+ row-gap:8px;
+ margin-top:30px;
+}
+.blog-template-1{
+ display: inline-block;
+ width:32%;
+ background-color:var(--dark-blue);
+ border-radius:8px;
+ padding:1%;
+}
+.blog-template-1-img{
+ width :100%;
+ height: 40%;
+}
+.blog-template-1-time{
+font-size:12px;
+font-family:"Poppins";
+color:grey; 
+font-style:italic;
+}
+.blog-template-1-topic{
+font-size:18px;
+font-family:"Montserrat";
+color:var(--pink); 
+font-weight:bold;
+margin-bottom:4px;
+}
+.blog-template-1-category{
+font-size:12px;
+font-family:"Montserrat";
+color:white; 
+text-decoration: underline 1px var(--pink);
+font-style:italic;
+}
+.blog-template-1-note{
+ font-size:12px;
+ font-family:"Poppins";
+ color:white;
+ margin-top:8px;
+ 
+}
+.blog-template-1-panel{
+ margin-top:16px;
+ align-items:bottom;
+}
+.fa-heart, .fa-comment-dots, .fa-eye{
+ color:grey;
+}
+.no-likes, .no-comments, .no-views{
+ display: inline ;
+ margin-right:3px;
+ margin-left:1px;
+}
+.blog-template-1-btn{
+ background-color:var(--pink);
+ border:none;
+ width:24px;
+ aspect-ratio:1;
+ border-radius:2px;
+ margin-left:72px;
+}
+.blog-template-1-btn .fa-arrow-right{
+ font-size:16px;
+ margin-top:2px;
+ margin-right:2px;
+}
